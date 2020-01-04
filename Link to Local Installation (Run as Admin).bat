@@ -1,0 +1,1 @@
+mklink /D "%APPDATA%\Grindstone 4\Extensions" "%~dp0Extensions"

@@ -1,0 +1,7 @@
+{
+    "id": "{0B6F6B69-7D09-4DBB-B1FC-3A2F1F69F4D8}",
+    "name": "Show the Date",
+    "globalAssemblyCacheReferences": [
+        "PresentationFramework"
+    ]
+}

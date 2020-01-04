@@ -1,0 +1,9 @@
+{
+    "id": "{CD4D542F-1740-4542-9EEF-8027214B9E35}",
+    "name": "Notify of Time Every Five Seconds",
+    "requiredExtensions": {
+        "{F58D6D8F-ABE6-476F-9C0D-8BC765853B8B}": {
+            "name": "Notification Display"
+        }
+    }
+}
