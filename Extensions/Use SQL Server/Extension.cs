@@ -1,4 +1,3 @@
-using Newtonsoft.Json;
 using Quantum;
 using Quantum.Client.Windows;
 using Quantum.Entities;
@@ -558,12 +557,6 @@ class SqlServerTransactor : Transactor, INotifyPropertyChanged, INotifyPropertyC
             }
         }
         return await base.ProcessAppliedChangesAsync(originalState, changesApplied, inScopeChangesApplied);
-    }
-
-    protected override async Task<bool> ProcessChangesBeforeApplicationAsync(ChangeSet changesToBeApplied)
-    {
-        // TODO: make sure this is going to work in SQL Server, and if not, throw
-        return await base.ProcessChangesBeforeApplicationAsync(changesToBeApplied);
     }
 
     protected bool SetBackedProperty<TValue>(ref TValue backingField, TValue value, [CallerMemberName] string propertyName = null)
