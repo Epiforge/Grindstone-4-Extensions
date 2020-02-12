@@ -596,7 +596,7 @@ var extensionsMenuExtensionId = Guid.Parse("{27F65593-7235-4108-B5D9-F0DE417D853
 
 void AboutUseSqlServerClick(object sender, RoutedEventArgs e)
 {
-    MessageDialog.Present(Window.GetWindow((DependencyObject)sender), "Your Mom", "About Use SQL Server", MessageBoxImage.Information);
+    MessageDialog.Present(Window.GetWindow((DependencyObject)sender), "This extension demonstrates fully interacting with the lifecycle of changes to the user's data by storing it in a completely different place just for giggles. You must have a Microsoft SQL Server 2008 or later instance to see it in action.", "About Use SQL Server", MessageBoxImage.Information);
 }
 
 void DatabaseDismountingHandler(object sender, EventArgs e)
