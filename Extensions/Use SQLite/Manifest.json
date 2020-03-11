@@ -1,0 +1,43 @@
+{
+    "id": "{1DA0060B-CE84-4F46-8BB3-BB2C0288A562}",
+    "name": "Use SQLite",
+    "nuGetPackageReferences": {
+        "sqlite-net-pcl": {
+            "version": "1.6.292",
+            "paths": [
+                "lib\\netstandard1.1\\SQLite-net.dll"
+            ]
+        },
+        "SQLitePCLRaw.bundle_green": {
+            "version": "1.1.13",
+            "paths": [
+                "lib\\net45\\SQLitePCLRaw.batteries_green.dll",
+                "lib\\net45\\SQLitePCLRaw.batteries_v2.dll"
+            ]
+        },
+        "SQLitePCLRaw.core": {
+            "version": "1.1.13",
+            "paths": [
+                "lib\\net45\\SQLitePCLRaw.core.dll"
+            ]
+        },
+        "SQLitePCLRaw.lib.e_sqlite3.v110_xp": {
+            "version": "1.1.13",
+            "copies": {
+                "runtimes\\win-x64\\native\\e_sqlite3.dll": "x64\\e_sqlite3.dll",
+                "runtimes\\win-x86\\native\\e_sqlite3.dll": "x86\\e_sqlite3.dll"
+            }
+        },
+        "SQLitePCLRaw.provider.e_sqlite3.net45": {
+            "version": "1.1.13",
+            "paths": [
+                "lib\\net45\\SQLitePCLRaw.provider.e_sqlite3.dll"
+            ]
+        }
+    },
+    "requiredExtensions": {
+        "{27F65593-7235-4108-B5D9-F0DE417D8536}": {
+            "name": "Extensions Menu"
+        }
+    }
+}
