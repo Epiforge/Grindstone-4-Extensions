@@ -641,7 +641,7 @@ await Extension.OnUiThreadAsync(() =>
             }
             catch (Exception ex)
             {
-                MessageDialog.Present(mainWindow, ex.GetDetails(), "Whoops, well, that didn't work...", MessageBoxImage.Error);
+                Extension.Error(ex);
             }
         }
     };
