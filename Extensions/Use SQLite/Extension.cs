@@ -608,8 +608,6 @@ await Extension.OnUiThreadAsync(() =>
     extensionMenuItem.Items.Add(aboutUseSqliteMenuItem);
 });
 
-SQLitePCL.Batteries.Init();
-
 Extension.EngineStarting += EngineStartingHandler;
 Extension.App.DatabaseDismounting += DatabaseDismountingHandler;
 Extension.PostMessage(extensionsMenuExtensionId, extensionMenuItem);
