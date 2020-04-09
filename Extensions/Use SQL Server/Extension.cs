@@ -180,7 +180,7 @@ class SqlServerTransactor : Transactor, INotifyPropertyChanged, INotifyPropertyC
                 using (var cmd = conn.CreateCommand())
                 {
                     var tablePrefix = kv.Value.IsEnumeration ? "ListValue" : "Text";
-                    cmd.CommandText = $"IF EXISTS (SELECT Id FROM {tablePrefix}Properties where Id = @id) UPDATE {tablePrefix}Properties SET Name = @name, Notes = @notes where Id = @Id ELSE INSERT {tablePrefix}Properties (Id, Name, Notes) VALUES (@id, @name, @notes)";
+                    cmd.CommandText = $"IF EXISTS (SELECT Id FROM {tablePrefix}Properties WHERE Id = @id) UPDATE {tablePrefix}Properties SET Name = @name, Notes = @notes WHERE Id = @Id ELSE INSERT {tablePrefix}Properties (Id, Name, Notes) VALUES (@id, @name, @notes)";
                     cmd.Parameters.AddWithValue("@id", kv.Key);
                     cmd.Parameters.AddWithValue("@name", kv.Value.Name);
                     cmd.Parameters.AddWithValue("@notes", (object)kv.Value.Notes ?? DBNull.Value);
