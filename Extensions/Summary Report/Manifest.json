@@ -1,0 +1,29 @@
+{
+    "id": "{9074d8c6-aa0e-4f58-a6af-95d265be6828}",
+    "name": "Summary Report",
+    "nuGetPackageReferences": {
+        "DocumentFormat.OpenXml": {
+            "version": "2.12.0",
+            "paths": [
+                "lib\\net46\\DocumentFormat.OpenXml.dll"
+            ]
+        },
+        "Gear.ActiveExpressions": {
+            "version": "1.0.52",
+            "paths": [
+                "lib\\netstandard1.3\\Gear.ActiveExpressions.dll"
+            ]
+        },
+        "Gear.ActiveQuery": {
+            "version": "1.0.20",
+            "paths": [
+                "lib\\netstandard1.3\\Gear.ActiveQuery.dll"
+            ]
+        }
+    },
+    "requiredExtensions": {
+        "{27F65593-7235-4108-B5D9-F0DE417D8536}": {
+            "name": "Extensions Menu"
+        }
+    }
+}
